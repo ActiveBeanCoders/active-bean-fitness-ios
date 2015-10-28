@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		CD8B9A261BC4B24700F98B51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8B9A251BC4B24700F98B51 /* AppDelegate.swift */; };
-		CD8B9A281BC4B24700F98B51 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8B9A271BC4B24700F98B51 /* FirstViewController.swift */; };
-		CD8B9A2A1BC4B24700F98B51 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8B9A291BC4B24700F98B51 /* SecondViewController.swift */; };
+		CD8B9A281BC4B24700F98B51 /* RunningController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8B9A271BC4B24700F98B51 /* RunningController.swift */; };
+		CD8B9A2A1BC4B24700F98B51 /* BikingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8B9A291BC4B24700F98B51 /* BikingController.swift */; };
 		CD8B9A2D1BC4B24700F98B51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD8B9A2B1BC4B24700F98B51 /* Main.storyboard */; };
 		CD8B9A2F1BC4B24700F98B51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD8B9A2E1BC4B24700F98B51 /* Assets.xcassets */; };
 		CD8B9A321BC4B24700F98B51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD8B9A301BC4B24700F98B51 /* LaunchScreen.storyboard */; };
 		CD8B9A3D1BC4B24700F98B51 /* ActiveBeanFitnessIosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8B9A3C1BC4B24700F98B51 /* ActiveBeanFitnessIosTests.swift */; };
 		CD8B9A481BC4B24700F98B51 /* ActiveBeanFitnessIosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8B9A471BC4B24700F98B51 /* ActiveBeanFitnessIosUITests.swift */; };
+		CD9EAB1C1BD5E5F600DB355F /* HikingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9EAB1B1BD5E5F600DB355F /* HikingController.swift */; settings = {ASSET_TAGS = (); }; };
+		CD9EAB1E1BD5E66300DB355F /* MyActiveBeanFitnessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9EAB1D1BD5E66300DB355F /* MyActiveBeanFitnessController.swift */; settings = {ASSET_TAGS = (); }; };
+		CD9EAB201BD6008800DB355F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9EAB1F1BD6008800DB355F /* CoreLocation.framework */; };
+		CD9EAB221BD600C100DB355F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9EAB211BD600C100DB355F /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +41,8 @@
 /* Begin PBXFileReference section */
 		CD8B9A221BC4B24700F98B51 /* ActiveBeanFitnessIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActiveBeanFitnessIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD8B9A251BC4B24700F98B51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CD8B9A271BC4B24700F98B51 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		CD8B9A291BC4B24700F98B51 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		CD8B9A271BC4B24700F98B51 /* RunningController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningController.swift; sourceTree = "<group>"; };
+		CD8B9A291BC4B24700F98B51 /* BikingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikingController.swift; sourceTree = "<group>"; };
 		CD8B9A2C1BC4B24700F98B51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD8B9A2E1BC4B24700F98B51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD8B9A311BC4B24700F98B51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +53,10 @@
 		CD8B9A431BC4B24700F98B51 /* ActiveBeanFitnessIosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ActiveBeanFitnessIosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD8B9A471BC4B24700F98B51 /* ActiveBeanFitnessIosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveBeanFitnessIosUITests.swift; sourceTree = "<group>"; };
 		CD8B9A491BC4B24700F98B51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD9EAB1B1BD5E5F600DB355F /* HikingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikingController.swift; sourceTree = "<group>"; };
+		CD9EAB1D1BD5E66300DB355F /* MyActiveBeanFitnessController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyActiveBeanFitnessController.swift; sourceTree = "<group>"; };
+		CD9EAB1F1BD6008800DB355F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CD9EAB211BD600C100DB355F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD9EAB221BD600C100DB355F /* MapKit.framework in Frameworks */,
+				CD9EAB201BD6008800DB355F /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +89,8 @@
 		CD8B9A191BC4B24700F98B51 = {
 			isa = PBXGroup;
 			children = (
+				CD9EAB211BD600C100DB355F /* MapKit.framework */,
+				CD9EAB1F1BD6008800DB355F /* CoreLocation.framework */,
 				CD8B9A241BC4B24700F98B51 /* ActiveBeanFitnessIos */,
 				CD8B9A3B1BC4B24700F98B51 /* ActiveBeanFitnessIosTests */,
 				CD8B9A461BC4B24700F98B51 /* ActiveBeanFitnessIosUITests */,
@@ -100,8 +112,10 @@
 			isa = PBXGroup;
 			children = (
 				CD8B9A251BC4B24700F98B51 /* AppDelegate.swift */,
-				CD8B9A271BC4B24700F98B51 /* FirstViewController.swift */,
-				CD8B9A291BC4B24700F98B51 /* SecondViewController.swift */,
+				CD8B9A271BC4B24700F98B51 /* RunningController.swift */,
+				CD8B9A291BC4B24700F98B51 /* BikingController.swift */,
+				CD9EAB1B1BD5E5F600DB355F /* HikingController.swift */,
+				CD9EAB1D1BD5E66300DB355F /* MyActiveBeanFitnessController.swift */,
 				CD8B9A2B1BC4B24700F98B51 /* Main.storyboard */,
 				CD8B9A2E1BC4B24700F98B51 /* Assets.xcassets */,
 				CD8B9A301BC4B24700F98B51 /* LaunchScreen.storyboard */,
@@ -258,9 +272,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD8B9A2A1BC4B24700F98B51 /* SecondViewController.swift in Sources */,
+				CD8B9A2A1BC4B24700F98B51 /* BikingController.swift in Sources */,
+				CD9EAB1E1BD5E66300DB355F /* MyActiveBeanFitnessController.swift in Sources */,
 				CD8B9A261BC4B24700F98B51 /* AppDelegate.swift in Sources */,
-				CD8B9A281BC4B24700F98B51 /* FirstViewController.swift in Sources */,
+				CD8B9A281BC4B24700F98B51 /* RunningController.swift in Sources */,
+				CD9EAB1C1BD5E5F600DB355F /* HikingController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +501,7 @@
 				CD8B9A4E1BC4B24700F98B51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD8B9A4F1BC4B24700F98B51 /* Build configuration list for PBXNativeTarget "ActiveBeanFitnessIosTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +510,7 @@
 				CD8B9A511BC4B24700F98B51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD8B9A521BC4B24700F98B51 /* Build configuration list for PBXNativeTarget "ActiveBeanFitnessIosUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +519,7 @@
 				CD8B9A541BC4B24700F98B51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

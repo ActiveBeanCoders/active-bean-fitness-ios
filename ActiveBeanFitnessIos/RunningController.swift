@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  RunningController.swift
 //  ActiveBeanFitnessIos
 //
 //  Created by Brian Rhodes on 10/6/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class RunningController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

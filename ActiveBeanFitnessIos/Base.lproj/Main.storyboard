@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--Running-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="RunningController" customModule="ActiveBeanFitnessIos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -16,38 +17,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="221" y="279" width="157.5" height="41.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <rect key="frame" x="203" y="329" width="194.5" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ActiveBeanFitnessGradientBackground" translatesAutoresizingMaskIntoConstraints="NO" id="njf-Cn-QLA">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ActiveBeanFitnessLogoText" translatesAutoresizingMaskIntoConstraints="NO" id="Zs7-Vf-8MX">
+                                <rect key="frame" x="20" y="20" width="560" height="57"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="uNQ-J6-cAt"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zs7-Vf-8MX" secondAttribute="trailing" id="5lO-Fd-wFV"/>
+                            <constraint firstItem="Zs7-Vf-8MX" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="5s1-uE-3Gb"/>
+                            <constraint firstItem="Zs7-Vf-8MX" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="cow-9u-Q7g"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Running" image="ActiveBeanFitnessShoeIcon30x30" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="838" y="-744"/>
         </scene>
-        <!--Second-->
+        <!--Biking-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="BikingController" customModule="ActiveBeanFitnessIos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -56,33 +55,172 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="195" y="279" width="209.5" height="41.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="192" y="329" width="215.5" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ActiveBeanFitnessGradientBackground" translatesAutoresizingMaskIntoConstraints="NO" id="USq-6s-xnt">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ActiveBeanFitnessLogoText" translatesAutoresizingMaskIntoConstraints="NO" id="DXO-3j-ss7">
+                                <rect key="frame" x="25" y="20" width="551" height="57"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="B5g-6Q-SCd"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                            <constraint firstItem="DXO-3j-ss7" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="7F5-Tw-K1y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DXO-3j-ss7" secondAttribute="trailing" id="CJZ-d3-OhA"/>
+                            <constraint firstItem="DXO-3j-ss7" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="vG1-vL-6gX"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Biking" image="ActiveBeanFitnessBikeIcon30x30" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="360"/>
+            <point key="canvasLocation" x="838" y="-68"/>
+        </scene>
+        <!--Hiking-->
+        <scene sceneID="xkH-ms-Mtc">
+            <objects>
+                <viewController title="Hiking" id="fWy-cQ-jiS" customClass="HikingController" customModule="ActiveBeanFitnessIos" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xDs-BF-Vlm"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mew-ZY-w4g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Uw-hN-EL3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ActiveBeanFitnessGradientBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Haa-Dw-pfm">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ActiveBeanFitnessLogoText" translatesAutoresizingMaskIntoConstraints="NO" id="Q28-LW-eYX">
+                                <rect key="frame" x="25" y="20" width="551" height="57"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="tYl-6v-8jh"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Q28-LW-eYX" secondAttribute="trailing" id="agR-cm-Ofj"/>
+                            <constraint firstItem="Q28-LW-eYX" firstAttribute="leading" secondItem="5Uw-hN-EL3" secondAttribute="leadingMargin" id="rgM-oZ-f8Q"/>
+                            <constraint firstItem="Q28-LW-eYX" firstAttribute="top" secondItem="xDs-BF-Vlm" secondAttribute="bottom" id="rux-oB-R3M"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Hiking" image="ActiveBeanFitnessHikingIcon30x30" id="LZH-qP-bc1"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FJ9-N6-bRB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="838" y="595"/>
+        </scene>
+        <!--My Active Bean Fitness-->
+        <scene sceneID="sxN-pF-4lX">
+            <objects>
+                <viewController title="My Active Bean Fitness" id="wf7-37-zpF" customClass="MyActiveBeanFitnessController" customModule="ActiveBeanFitnessIos" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="muP-7f-AgS"/>
+                        <viewControllerLayoutGuide type="bottom" id="6xh-PM-GlE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="edV-Z0-qd7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ActiveBeanFitnessGradientBackground" translatesAutoresizingMaskIntoConstraints="NO" id="wa6-gW-bw0">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uL3-UU-z0h">
+                                <rect key="frame" x="0.0" y="0.0" width="560" height="600"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ActiveBeanFitnessLogoText" translatesAutoresizingMaskIntoConstraints="NO" id="azw-SL-Sn3">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="57"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="57" id="cea-hX-wH2"/>
+                                        </constraints>
+                                    </imageView>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hoW-rK-vg8">
+                                        <rect key="frame" x="0.0" y="57" width="560" height="107"/>
+                                    </mapView>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ee7-qK-2rH">
+                                        <rect key="frame" x="0.0" y="164" width="560" height="206"/>
+                                        <subviews>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="uig-fw-xZJ">
+                                                <rect key="frame" x="139" y="22" width="121" height="29"/>
+                                                <segments>
+                                                    <segment title="" image="ActiveBeanFitnessShoeIcon30x30"/>
+                                                    <segment title="" image="ActiveBeanFitnessBikeIcon30x30"/>
+                                                    <segment title="" image="ActiveBeanFitnessHikingIcon30x30"/>
+                                                </segments>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </segmentedControl>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="uig-fw-xZJ" secondAttribute="trailing" id="1Ee-Zl-gv4"/>
+                                            <constraint firstItem="uig-fw-xZJ" firstAttribute="leading" secondItem="ee7-qK-2rH" secondAttribute="leading" id="9g9-FK-6p0"/>
+                                            <constraint firstItem="uig-fw-xZJ" firstAttribute="top" secondItem="ee7-qK-2rH" secondAttribute="top" constant="10" id="XSf-D0-QQ8"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z62-GZ-4aN">
+                                        <rect key="frame" x="0.0" y="370" width="560" height="230"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9rK-zH-dn9">
+                                                <rect key="frame" x="223" y="4" width="114" height="78"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="--:--:--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XpC-Gw-EUw">
+                                                        <rect key="frame" x="0.0" y="0.0" width="114" height="43"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleAspectFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lwx-Ot-Unt">
+                                                        <rect key="frame" x="36" y="43" width="42" height="35"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                        <state key="normal" title="Start">
+                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="startButtonTouchUpInside:" destination="wf7-37-zpF" eventType="touchUpInside" id="aGc-YU-hqU"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="XpC-Gw-EUw" secondAttribute="trailing" id="4fo-Og-tgI"/>
+                                                    <constraint firstItem="XpC-Gw-EUw" firstAttribute="leading" secondItem="9rK-zH-dn9" secondAttribute="leading" id="akQ-S6-HXy"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="9rK-zH-dn9" firstAttribute="centerX" secondItem="Z62-GZ-4aN" secondAttribute="centerX" id="kno-ho-puo"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="uL3-UU-z0h" firstAttribute="height" secondItem="edV-Z0-qd7" secondAttribute="height" id="ViK-ow-m2a"/>
+                            <constraint firstItem="uL3-UU-z0h" firstAttribute="leading" secondItem="edV-Z0-qd7" secondAttribute="leadingMargin" id="VpD-3W-eGr"/>
+                            <constraint firstItem="uL3-UU-z0h" firstAttribute="top" secondItem="edV-Z0-qd7" secondAttribute="topMargin" constant="10" id="pD1-q8-DE0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uL3-UU-z0h" secondAttribute="trailing" id="pwo-pY-7qB"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="My Active Bean Fitness" image="first" id="dwr-NQ-EtR"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="myMapView" destination="hoW-rK-vg8" id="Dv5-b0-rcm"/>
+                        <outlet property="startButton" destination="Lwx-Ot-Unt" id="BHb-Hj-8kU"/>
+                        <outlet property="timeElapsedLabel" destination="XpC-Gw-EUw" id="cyv-S7-AK0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ab-sq-fJk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="838" y="-1455"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -95,8 +233,10 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
+                        <segue destination="wf7-37-zpF" kind="relationship" relationship="viewControllers" id="hy3-15-Xbp"/>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="fWy-cQ-jiS" kind="relationship" relationship="viewControllers" id="Chn-hW-ZyL"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -105,7 +245,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ActiveBeanFitnessBikeIcon30x30" width="30" height="30"/>
+        <image name="ActiveBeanFitnessGradientBackground" width="1242" height="2208"/>
+        <image name="ActiveBeanFitnessHikingIcon30x30" width="30" height="30"/>
+        <image name="ActiveBeanFitnessLogoText" width="1058" height="119"/>
+        <image name="ActiveBeanFitnessShoeIcon30x30" width="30" height="30"/>
         <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
     </resources>
 </document>
