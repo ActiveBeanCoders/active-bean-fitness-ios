@@ -108,7 +108,7 @@ build/
 # As per build/ and DerivedData/, this ought to have a trailing slash
 #
 # NB: this is exclusive with OPTION 2 below
-xcuserdata/
+#xcuserdata/
 
 # OPTION 2: ---------------------------------
 #     get rid of ALL personal settings, but KEEP SOME OF THEM
@@ -122,7 +122,7 @@ xcuserdata/
 
 #     (requires option 2 above): Personal Schemes
 #
-#!xcuserdata/**/xcschemes/*
+xcuserdata/**/xcschemes/*
 
 ####
 # XCode 4 workspaces - more detailed
